@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid
+}
+
+.header {
+    background-color: white;
+}
+
+.sidebar {
+    background-color: lightskyblue;
+}
+
+.main-content {
+    background-color: slategray;
+}
