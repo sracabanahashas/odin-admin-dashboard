@@ -22,3 +22,9 @@ body {
 .main-content {
     background-color: slategray;
 }
+
+.project-card, 
+.announcement-card,
+.trending-card {
+    background-color: white;
+}
