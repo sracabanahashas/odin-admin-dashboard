@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+    max-height: 100vh;
     display: grid;
     grid-template: 1fr 4fr / 1fr 4fr;
 }
@@ -15,29 +16,100 @@ body {
 .header {
     background-color: white;
     grid-column: 2 / 3;
+    display: grid;
+}
+
+.dash-row1 {
+    grid-row: 1 / 2;
+}
+
+.dash-row2 {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+}
+
+.greeting-wrapper {
+    align-self: center;
+    justify-self: center;
+}
+
+.dash-row2 > button {
+    justify-self: center;
+    align-self: center;
 }
 
 .sidebar {
     background-color: lightskyblue;
+    padding: 15px;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 4rem 1fr 1fr 1fr
 }
+
+.sidebar > div {
+    padding: 15px;
+}
+
+.dashboard-icon-wrapper {
+    align-self: start;
+    justify-self: start;
+}
+
+.home-row {
+    align-self: start;
+    justify-self: start;
+}
+
+.settings-row {
+    align-self: start;
+    justify-self: start;
+}
+
 
 .main-content {
     background-color: slategray;
+    padding: 15px;
     overflow: auto;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr 1fr;
+    gap: 15px;
 }
 
 .your-projects {
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 1.5rem;
+    gap: 15px;
+}
+
+.your-projects > p {
+    grid-column: 1 / -1;
+}
+
+.project-card {
+    display: grid;
+    gap: 15px;
+    align-items: center;
 }
 
 .announcements {
     grid-column: 2 / 3;
+    display: grid;
+    gap: 15px;
+    grid-template-rows: 1.5rem;
+}
+
+.announcements > p {
+    grid-column: 1 / -1;
+}
+
+.announcement-card {
+    padding-bottom: 15px;
 }
 
 .trending {
