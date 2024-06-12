@@ -100,6 +100,24 @@ body {
     display: grid;
     gap: 15px;
     align-items: center;
+    grid-template-rows: 1.5rem 2fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.project-header {
+    grid-column: 1 / -1;
+}
+
+.project-text {
+    grid-column: 1 / -1;
+}
+
+.project-card > .icon {
+    grid-row: 3 / 4;
+}
+
+.favBtn {
+    grid-column: 2 / 3;
 }
 
 .announcements {
