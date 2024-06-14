@@ -128,22 +128,31 @@ body {
 }
 
 .sidebar > div {
-    padding: 15px;
 }
 
 .dashboard-icon-wrapper {
     display: flex;
     align-self: start;
+    align-items: center;
     justify-self: start;
-    gap: 10px;
+    font-size: 1.5rem;
+    gap: 5px;
+    padding: 10px;
+}
+
+.dashboard-icon > img {
+    height: 2.5rem;
+    display: flex;
 }
 
 .home-row, .settings-row {
     align-self: start;
     justify-self: start;
+    padding: 15px;
+
 }
 
-.dashboard-icon-wrapper, .home-row > div, .settings-row > div {
+.home-row > div, .settings-row > div {
     display: flex;
     gap: 15px;
     align-items: center;
