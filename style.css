@@ -10,7 +10,11 @@ body {
 
 .icon {
     height: 1.5rem;
+    display: flex;
+}
 
+.icon > img {
+    align-content: center;
 }
 
 .container {
@@ -128,18 +132,22 @@ body {
 }
 
 .dashboard-icon-wrapper {
+    display: flex;
+    align-self: start;
+    justify-self: start;
+    gap: 10px;
+}
+
+.home-row, .settings-row {
     align-self: start;
     justify-self: start;
 }
 
-.home-row {
-    align-self: start;
-    justify-self: start;
-}
-
-.settings-row {
-    align-self: start;
-    justify-self: start;
+.dashboard-icon-wrapper, .home-row > div, .settings-row > div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 7px;
 }
 
 
