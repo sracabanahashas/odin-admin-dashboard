@@ -29,6 +29,8 @@ body {
     display: grid;
     padding: 15px;
     gap: 15px;
+    box-shadow: 5px 5px 5px 0px #9EA7AF;
+    ;
 }
 
 .dash-row1 {
