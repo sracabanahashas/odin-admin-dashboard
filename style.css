@@ -132,9 +132,6 @@ body {
     grid-template-rows: 4rem 1fr 1fr 1fr
 }
 
-.sidebar > div {
-}
-
 .dashboard-icon-wrapper {
     display: flex;
     align-self: start;
